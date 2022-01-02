@@ -1,0 +1,4 @@
+$('#book_comment_form').html("<%= j(render 'book_comments/comment-gin', book: @comment.book, comment: @comment_new) %>")
+$('.detail__table').html("<%= j(render 'books/detail', book: @comment.book) %>")
+$('.comment__table').html("<%= j(render 'book_comments/table', book_comments: @comment.book.book_comments ) %>")
+$('.comment__textarea').val('')
